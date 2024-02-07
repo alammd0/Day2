@@ -1,0 +1,30 @@
+.container {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+	height: 5px;
+	width: 45px;
+	background-color: black;
+	margin: 3px 0;
+	transition: all 3ms;
+}
+
+.change .bar1 {
+	transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+	opacity: 0;
+}
+
+.change .bar3 {
+	transform: translate(0, -11px) rotate(45deg);
+}
